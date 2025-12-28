@@ -1,0 +1,15 @@
+name: food_nutrition_app
+description: Food Nutrition Calculator App
+publish_to: "none"
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/foods.json
