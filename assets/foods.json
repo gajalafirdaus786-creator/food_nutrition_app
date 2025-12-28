@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Moong Dal",
+    "category": "Dal",
+    "protein": 24,
+    "carbs": 59,
+    "fiber": 16,
+    "fat": 1.2,
+    "calories": 347
+  },
+  {
+    "name": "Chana Dal",
+    "category": "Dal",
+    "protein": 20,
+    "carbs": 61,
+    "fiber": 13,
+    "fat": 5,
+    "calories": 364
+  }
+]
