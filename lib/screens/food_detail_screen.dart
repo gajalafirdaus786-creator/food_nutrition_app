@@ -57,7 +57,31 @@ Widget build(BuildContext context) {
           _nutritionCard('Carbs (g)', carbs),
           _nutritionCard('Fiber (g)', fiber),
           _nutritionCard('Fat (g)', fat),
-          _nutritionCard('Calories', calories),
+          _nutritionCard('Calories', calories),[const SizedBox(height: 16),
+
+Text(
+  'Calories Progress',
+  style: const TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  ),
+),
+
+const SizedBox(height: 8),
+
+LinearProgressIndicator(
+  value: (calories / 2000).clamp(0.0, 1.0),
+  minHeight: 10,
+  backgroundColor: Colors.grey.shade300,
+  color: Colors.green,
+),
+
+const SizedBox(height: 6),
+
+Text(
+  '${calories.toStringAsFixed(0)} / 2000 kcal',
+  style: const TextStyle(color: Colors.grey),
+),
         ],
       ),
     ),
