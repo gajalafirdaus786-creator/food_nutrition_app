@@ -1,8 +1,0 @@
-onTap: () {
-  Navigator.push(
-    context,
-    MaterialPageRoute(
-      builder: (context) => FoodDetailScreen(food: food),
-    ),
-  );
-},
